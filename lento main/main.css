@@ -1,0 +1,140 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f7fff7, #f0fff4);
+      overflow-x: hidden;
+      color: #2f5f46;
+    }
+
+    /* 배경 장식 */
+    .background-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.4;
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .shape.circle { width: 60px; height: 60px; background: #c9f2d0; top: 15%; left: 10%; }
+    .shape.square { width: 30px; height: 30px; background: #f6e9b9; top: 40%; left: 70%; transform: rotate(45deg); }
+    .shape.dot { width: 12px; height: 12px; background: #f2d9c9; top: 70%; left: 30%; }
+    .shape.big-circle { width: 200px; height: 200px; background: #e3f9e5; top: -50px; right: -50px; }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+     .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #004d40;
+    }
+
+    .navbar-menu {
+      display: flex;
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    .navbar-menu a {
+      text-decoration: none;
+      color: #333;
+      padding-bottom: 4px;
+    }
+
+    .navbar-menu a.active {
+      border-bottom: 2px solid #2ecc71;
+      color: #2ecc71;
+    }
+
+    .navbar-right {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+    }
+
+    /* 메인 타이틀 */
+    .container {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #77a566, #c5d86d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #3c8a6f;
+      margin-top: 10px;
+    }
+
+    /* 카드 */
+    .card {
+      margin: 40px auto;
+      max-width: 400px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      padding: 15px;
+    }
+
+    .option {
+      padding: 15px;
+      border-radius: 15px;
+      margin: 10px 0;
+      background: linear-gradient(to right, #ffffff, #f9fffb);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .option:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .option h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #2f6d4f;
+    }
+
+    .option p {
+      margin: 5px 0 0;
+      font-size: 13px;
+      color: #5f7f6d;
+    }

@@ -1,0 +1,210 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f6fcf8;
+      color: #2c3e50;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #004d40;
+    }
+
+    .navbar-menu {
+      display: flex;
+      gap: 30px;
+      font-size: 16px;
+    }
+
+    .navbar-menu a {
+      text-decoration: none;
+      color: #333;
+      padding-bottom: 4px;
+    }
+
+    .navbar-menu a.active {
+      border-bottom: 2px solid #2ecc71;
+      color: #2ecc71;
+    }
+
+    .navbar-right {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+    }
+
+    .container {
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+      padding: 60px;
+      width: 700px;
+      text-align: center;
+      position: relative;
+    }
+
+    .progress {
+      width: 100%;
+      background: #e0e0e0;
+      border-radius: 8px;
+      height: 12px;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 20%; /* 현재 1/5 */
+      height: 100%;
+      background: #2ecc71;
+    }
+    h2 {
+      margin-bottom: 40px;
+      font-size: 28px;
+      color: #0f5132;
+    }
+
+    .options {
+      text-align: left;
+    }
+
+    .option {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+
+    .option input {
+      margin-right: 12px;
+      transform: scale(1.4); /* 라디오 버튼도 크게 */
+      accent-color: #2ecc71;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    button {
+      background: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 14px 28px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover:not(:disabled) {
+      background: #27ae60;
+    }
+
+    button:disabled {
+      background: #b8e0c7;
+      cursor: not-allowed;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #7d8a89;
+      margin-top: 20px;
+    }
+
+     /* ===== 모달 ===== */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal-content {
+      background: linear-gradient(135deg, #fafff8, #f0fff4);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .modal-content h3 {
+      color: #2f6d4f;
+      margin-bottom: 10px;
+    }
+
+    .modal-content p {
+      font-size: 14px;
+      color: #5f7f6d;
+    }
+
+    .highlight-box {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 15px 0;
+      font-size: 14px;
+      color: #2f5f46;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .modal-footer {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .modal-footer span {
+      margin: 0 8px;
+    }
+
+    .modal-footer .secure { color: #4CAF50; }
+    .modal-footer .private { color: #FFB400; }
+    .modal-footer .trusted { color: #00796B; }
+
+    .modal button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #2f6d4f;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .modal button:hover {
+      background: #3c8a6f;
+    }
+
+    .close {
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      font-size: 20px;
+      color: #777;
+      cursor: pointer;
+    }

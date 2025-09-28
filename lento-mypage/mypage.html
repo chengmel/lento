@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lento - Reservations</title>
+  <link href="mypage.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="https://img.icons8.com/ios-filled/30/2ecc71/brain.png" alt="logo"/>
+      Lento
+    </div>
+    <div class="navbar-menu">
+      <a href="/lento main/main.html">메인</a>
+      <a href="/lento_servie/servie.html">설문조사</a>
+      <a href="/lento-AI/AI.html" class="active">분석 결과</a>
+      <a href="#"></a>
+    </div>
+    <div class="navbar-right">
+      ⚙️ 👤
+    </div>
+  </div>
+  </div>
+
+  <!-- Page Title -->
+  <div class="page-title">
+    <h2>Book Your Counseling Session</h2>
+    <p>Take the first step towards better mental health. Select your preferred date and time.</p>
+  </div>
+
+  <!-- Main Section -->
+  <div class="main">
+    <!-- Calendar -->
+    <div class="calendar">
+      <div class="calendar-header">
+        <button onclick="changeMonth(-1)">&#10094;</button>
+        <h3 id="monthYear"></h3>
+        <button onclick="changeMonth(1)">&#10095;</button>
+      </div>
+      <table id="calendarTable">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="legend">
+        <span><span class="selected-box"></span>Selected</span>
+        <span><span class="unavailable-box"></span>Unavailable</span>
+      </div>
+    </div>
+
+    <!-- Time Panel -->
+    <div class="time-panel" id="timePanel">
+      <span style="font-size:30px;">🕒</span>
+      <p>Please select a date first</p>
+    </div>
+  </div>
+  <script src="mypage.js"></script>
+</body>
+</html>

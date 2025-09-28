@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress Survey</title>
+  <link href="servie.css" rel="stylesheet">
+</head>
+<body>
+     <div class="navbar">
+    <div class="navbar-left">
+      <img src="https://img.icons8.com/ios-filled/30/2ecc71/brain.png" alt="logo"/>
+      Lento
+    </div>
+    <div class="navbar-menu">
+      <a href="/lento main/main.html">메인</a>
+      <a href="/lento_servie/servie.html">설문조사</a>
+      <a href="/lento-AI/AI.html" class="active">분석 결과</a>
+      <a href="#"></a>
+    </div>
+    <div class="navbar-right">
+      ⚙️ 👤
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <p style="font-size:18px; margin-bottom:10px;">Question 1 of 5 <span style="float:right;">20% Complete</span></p>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <h2>How would you describe your current stress level?</h2>
+
+    <div class="options">
+      <label class="option"><input type="radio" name="stress" value="low"> Low - I feel calm and in control</label><br>
+      <label class="option"><input type="radio" name="stress" value="moderate"> Moderate - Some stress but manageable</label><br>
+      <label class="option"><input type="radio" name="stress" value="high"> High - Feeling overwhelmed frequently</label><br>
+      <label class="option"><input type="radio" name="stress" value="severe"> Severe - Stress is affecting daily life</label>
+    </div>
+
+    <div class="buttons">
+      <button disabled>Previous</button>
+      <button>Next</button>
+    </div>
+
+    <p class="note">Your responses are confidential</p>
+    <p class="note">Take your time - there are no right or wrong answers</p>
+  </div>
+
+   <!-- 모달 -->
+  <div class="modal" id="privacyModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h3>Privacy & Confidentiality</h3>
+      <p>Important information about your privacy and data protection</p>
+      <div class="highlight-box">
+        Counseling content will remain confidential, and personal information may be used according to our privacy policy.
+      </div>
+      <div class="modal-footer">
+        <span class="secure">● Secure</span>
+        <span class="private">● Private</span>
+        <span class="trusted">● Trusted</span>
+      </div>
+      <button id="understandBtn">I Understand</button>
+    </div>
+  </div>
+  <script src="servie.js"></script>
+</body>
+</html>

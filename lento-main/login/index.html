@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lento - 로그인 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 토글 버튼 -->
+        <div class="toggle-switch">
+            <span class="toggle-label student">학생</span>
+            <label class="switch">
+                <input type="checkbox" id="user-toggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label teacher">선생님</span>
+        </div>
+
+        <!-- 교사 로그인 페이지 -->
+        <div class="page-container educator-page active">
+            <div class="title-section green">
+                <div class="header">
+                    <img src="https://via.placeholder.com/30" alt="Educator Icon">
+                    <h1>교육자 포털</h1>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>교육자 영역</h2>
+                <p>환영합니다! 교육자 계정에 로그인하세요</p>
+                <form action="login.jsp" method="post">
+                    <input type="hidden" name="userType" value="educator">
+                    <div class="input-group">
+                        <label for="educatorEmail">이메일 주소</label>
+                        <input type="email" id="educatorEmail" name="email" placeholder="Enter your professional email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="educatorPassword">비밀번호</label>
+                        <input type="password" id="educatorPassword" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="sign-in-button green-button">교육자 포털 로그인</button>
+                </form>
+                <div class="join-link">
+                    <p>우리 교육자 커뮤니티에 처음 오신 건가요? <a href="#">회원가입</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 학생 로그인 페이지 -->
+        <div class="page-container student-page">
+            <div class="title-section yellow">
+                <div class="header">
+                    <img src="https://via.placeholder.com/30" alt="Student Icon">
+                    <h1>학생 영역</h1>
+                </div>
+            </div>
+            <div class="form-section">
+                <h2>학생 영역</h2>
+                <p>환영합니다! 학생 계정에 로그인하세요</p>
+                <form action="login.jsp" method="post">
+                    <input type="hidden" name="userType" value="student">
+                    <div class="input-group">
+                        <label for="studentEmail">이메일 주소</label>
+                        <input type="email" id="studentEmail" name="email" placeholder="Enter your student email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="studentPassword">비밀번호</label>
+                        <input type="password" id="studentPassword" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="sign-in-button yellow-button">학생상담 로그인</button>
+                </form>
+                <div class="join-link">
+                    <p>우리 학생상담 커뮤니티에 처음 오신 건가요? <a href="#">회원가입</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
